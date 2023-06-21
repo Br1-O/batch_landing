@@ -6,7 +6,7 @@ blockquote,q { quotes: none;}
 blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
 table { border-collapse: collapse; border-spacing: 0;}
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Roboto+Flex&family=Roboto:wght@400;700&display=swap');
 
 * { 
     -moz-box-sizing: border-box; 
@@ -23,75 +23,74 @@ table { border-collapse: collapse; border-spacing: 0;}
     display: flex;
     background-color: #F6F6F6;
     max-height: 128px;
-    z-index: 1;
+    z-index: 999;
 
 }
 
-.navbar{
-    position: sticky;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    top: 0;
-    max-height: 110px;
-}
+    .navbar{
+        position: sticky;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        max-height: 110px;
+    }
 
+        .logo{
+            max-width: 230px;
+            min-height: 190px;
+            margin-left: 38.8px;
+        }
 
-.logo{
-    width: 230px;
-    height: 190px;
-    margin-left: 38.8px;
-}
+        .nav-list{
+            list-style:none;
+            color: blue;
+            padding: 10px;
+            justify-self: flex-end;
+        }
 
-.nav-list{
-    list-style:none;
-    color: blue;
-    padding: 10px;
-    justify-self: flex-end;
-}
+            .nav-item{
+                display: inline-block;
+                margin: 10px;
+                padding:0 7px; 
+                position:relative;
+                font-family: 'Montserrat', sans-serif;
+            }
 
-.nav-item{
-    display: inline-block;
-    margin: 10px;
-    padding:0 7px; 
-    position:relative;
-    font-family: 'Montserrat', sans-serif;
-}
+            .nav-item a{
+                text-decoration: none;
+                color:#00329D;
+                font-weight: bolder;
+                font-size: 1.40rem;
 
-.nav-item a{
-    text-decoration: none;
-    color:#00329D;
-    font-weight: bolder;
-    font-size: 1.40rem;
+            }
 
-}
+            .nav-item a:hover{
+                color: #1453db;
+            }
 
-.nav-item a:hover{
-    color: #1453db;
-}
+            ul li:not(:last-child)::after{
+                content:""; 
+                border:2px solid #00329D;
+                border-width: 2px 2px 0 0;
+                position:absolute; 
+                right:-14px; 
+                top:0; 
+                height:100%;
+            }
 
-ul li:not(:last-child)::after{
-    content:""; 
-    border:2px solid #00329D;
-    border-width: 2px 2px 0 0;
-    position:absolute; 
-    right:-14px; 
-    top:0; 
-    height:100%;
-  }
-
-/*Blue line*/
-.navbar-container::after{ 
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 0.5em;
-    border-top: 1px solid #00329D;
-    z-index: -1;
-}
+            /*Blue line*/
+            .navbar-container::after{ 
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 0.5em;
+                border-top: 1px solid #00329D;
+                z-index: -1;
+            }
 
 
 /* ■■■■■■■■ Main - Blueprint ■■■■■■■■ */
@@ -104,134 +103,236 @@ main{
     background-size: 1700px;
 }
 
-.blueprint-container{
-    height: 500px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-start;
-    margin-right: 10px;
-}
+    .blueprint-container{
+        min-height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+        margin-right: 10px;
+    }
 
-.blueprint{
-    position:relative;
-    width: 35%;
-    margin-left: 150px;
-}
+    .blueprint{
+        position:relative;
+        width: 35%;
+        margin-left: 150px;
+    }
 
-.blueprint h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 54px;
-    font-weight: 700;
-    color: #00329D;
-    margin-bottom: 40px;
-}
+        .blueprint h1{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 54px;
+            font-weight: 700;
+            color: #00329D;
+            margin-bottom: 40px;
+        }
 
-.blueprint p{
-    font-family: 'Roboto', sans-serif;    
-    font-size: 24px;
-    font-weight: 400;
-    color: #9095A1;
-    margin-bottom: 40px;
-    max-width: 75%;
-}
+        .blueprint p{
+            font-family: 'Roboto', sans-serif;    
+            font-size: 24px;
+            font-weight: 400;
+            color: #9095A1;
+            margin-bottom: 40px;
+            max-width: 75%;
+        }
 
-.blueprint button{
-    color: #F6F6F6;
-    font-family: 'Roboto', sans-serif;    
-    font-size: 20px;
-    font-weight: 700;
+        .blueprint button{
+            color: #F6F6F6;
+            font-family: 'Roboto', sans-serif;    
+            font-size: 20px;
+            font-weight: 700;
 
-    position: relative;
-    display: inline-block;
-    white-space: nowrap;
-    text-align: center;
+            position: relative;
+            display: inline-block;
+            white-space: nowrap;
+            text-align: center;
 
-    padding: 18px 25px;
-    opacity: 0.85;
-    border-radius: 5px;
+            padding: 18px 25px;
+            opacity: 0.85;
+            border-radius: 5px;
 
-    background-color: #00329D;
-    border: none;
-    cursor: pointer;
-}
+            background-color: #00329D;
+            border: none;
+            cursor: pointer;
+        }
 
-.blueprint button:hover{
-    background-color: #1453db;
+        .blueprint button:hover{
+            background-color: #1453db;
 
-}
+        }
 
-.blueprint a {
-    position: relative;
-    width: 121px;
-    height: 30px;
+        .blueprint a {
+            position: relative;
+            width: 121px;
+            height: 30px;
 
-    font-family: 'Roboto', sans-serif;    
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
+            font-family: 'Roboto', sans-serif;    
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
 
-    color: #00329D;
-    justify-self: center;
-    align-self: center;
-    margin-left: 15px;
-    text-decoration: none;
-    cursor: pointer;
-}
+            color: #00329D;
+            justify-self: center;
+            align-self: center;
+            margin-left: 15px;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
-.blueprint a:hover{
-    color: #1453db;
+        .blueprint a:hover{
+            color: #1453db;
 
-}
+        }
 
 
 /* ■■■■■■■■ Spash Image and Grid 2x2 ■■■■■■■■ */
 
 .solutions-container{
-    width: 80%;
-    height:550px;
+    width: 75%;
+    min-height:550px;
     margin: auto;
+    background-color: #F6F6F6;
+    box-shadow: -4px 5px 100px rgba(0, 0, 0, 0.2);
+    padding:2%;
+    border-radius: 15px;
 }
 
-.solutions-container h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    color: #00329D;
-    position: relative;
-    margin-top: 50px;
-}
+    .solutions-container h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: #00329D;
+        position: relative;
+        margin-top: 45px;
+        margin-left: 10px;
+    }
 
-.solutions-container h2::before{
-    content:""; 
-    border-left:2px solid #00329D;
-    content: "";
-    position: absolute;
-    top: 20%;
-    left: -1%;
-    width: 3px; 
-    height: 50px; 
-    margin-right: 10px;
-  }
+    .solutions-container h2::before{
+        content:""; 
+        border-left:2px solid #00329D;
+        content: "";
+        position: absolute;
+        top: 20%;
+        left: -1%;
+        width: 3px; 
+        height: 50px; 
+        margin-right: 10px;
+    }
 
-  /*splash image*/
+    /*splash image*/
 
-  .split-image img{
-    width: 320px;
-    height: 422px;
-    margin-top: 70px;
-  }
+    .split-image img{
+        max-width: 320px;
+        min-height: 422px;
+        margin-top: 70px;
+    }
 
-  /* GRID items 2x2 with hover effect*/
+    /* GRID items 2x2 with hover effect*/
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(2 1fr);
-    grid-template-rows: repeat(2 1fr);
-}
+  
+    /* 2nd section - flame */
+    
+    /* .overlay-container{
+        position: relative;
+    } */
 
+    #flame-solutions{
+        margin-top: 5%;
+        margin-left: 5%;
+        max-width: 38%;
+        min-height: 68%;
+
+    }
+
+    .flame-wave-container #wave-solutions{
+        z-index: 1;
+        position: relative;
+        top:-25rem;
+        width: 100%;
+    }
+
+    /* 2nd section - 4 icons companies */
+
+    .grid-icons{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15%;
+        justify-content: center;    
+        align-self: flex-start;
+        margin-top: 12%;
+        margin-left:1%;
+    }
+
+        .icon-circle{
+            background-color: #F6F6F6;
+            border-color: #000;
+            border:2px;
+            border-style: solid;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+
+            background-image: url('../../public/images/batch_logo.png');
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .icon-circle:hover{
+            background-image: url('../../public/images/Logo_example.png');
+        }
+
+        .icon-circle2{
+            background-color: #F6F6F6;
+            border-color: #000;
+            border:2px;
+            border-style: solid;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            grid-column-start: 2;
+
+            background-image: url('../../public/images/batch_logo.png');
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .icon-circle2:hover{
+            background-image: url('../../public/images/Logo_example.png');
+
+        }
+
+        .icon-circle3{
+            background-color: #F6F6F6;
+            border-color: #000;
+            border:2px;
+            border-style: solid;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            grid-column-start: 3;
+
+            background-image: url('../../public/images/batch_logo.png');
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }    
+
+        .icon-circle3:hover{
+            background-image: url('../../public/images/Logo_example.png');
+
+        }
+
+        .circle-anchor{
+            align-self:center;
+            color:transparent;
+            cursor: pointer;
+        }
+
+/* 
 .grid-1{
     grid-column-start: 1;
     grid-column-end: 3;
@@ -255,6 +356,11 @@ main{
     grid-column-end: 5;
     grid-row: 2;
 }
+ */
+
+/* ■■■■■■■■ Carrousel ■■■■■■■■ */
+
+
 
 
 /* ■■■■■■■■ Form ■■■■■■■■ */
@@ -264,44 +370,131 @@ main{
     border-radius: 10px;
     border-style: solid;
     border-color: #00329D;
-    padding:2%;
+    padding:1%;
     display: flex;
     flex-direction: column; 
     align-items: center;
     background-color: #F6F6F6;
-    max-width: 80%;
+    max-width: 75%;
     margin: auto;
-}
-
-
-.even-columns{
-    display: flex;
-    flex-direction: row;
-}
-
-.form-col1{
-    display:flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 2em;
-    padding:20px;
-}
-
-.form-col2{
-    display:flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 2em;
-    padding:20px;
-}
-
-.form-label{
+    box-shadow: -4px 5px 100px rgba(0, 0, 0, 0.2);
 
 }
 
-.form-input{
+    .form-container h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        color: #00329D;
+        position: relative;
+        margin-top: 45px;
+        margin-left: 10px;
+    }
 
-}
+    .even-columns{
+        display: flex;
+        flex-direction: row;
+    }
+
+        .form-col1{
+            display:flex;
+            flex-direction: column;
+            width: 90%;
+            margin:2rem;
+            margin-right: 10rem;
+            padding:20px;
+        }
+
+        .form-col2{
+            display:flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 2em;
+            margin-top: 5rem;
+            padding:20px;
+        }
+
+            .form-label{
+                font-family: 'Roboto Flex', sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                color: #9095A1;
+
+                margin: 1rem;
+                margin-bottom: 0;
+            }
+
+            .form-input{
+                font-family: 'Roboto Flex', sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                height: 4rem;
+                width: 120%;
+
+                margin: 1rem;
+                background-color: #2aa9d0;
+                color:#F6F6F6;
+                border: none;
+                border-radius: 5px;
+                padding: 20px;
+
+            }
+
+            .radio-container{
+                margin-bottom: 2rem;
+            }
+
+            .form-radio{
+                width: 20px;
+                height: 20px;
+                background-color: #9095A1;
+                display: inline;
+            }
+
+            .radio-label{
+                display: inline;
+                margin: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .form input::placeholder{
+                color:#F6F6F6;
+            }
+
+            #text-area{
+                height: 40%;
+                width: 170%;
+                margin: 2rem;
+            }
+
+            .text-area-label{
+                margin-top: 3rem;
+            }
+
+            .form button{
+                color: #F6F6F6;
+                font-family: 'Roboto', sans-serif;    
+                font-size: 20px;
+                font-weight: 700;
+    
+                position: relative;
+                display: inline-block;
+                white-space: nowrap;
+                text-align: center;
+    
+                padding: 18px 25px;
+                opacity: 0.85;
+                border-radius: 5px;
+    
+                background-color: #00329D;
+                border: none;
+                cursor: pointer;
+                margin-left: 5rem;
+            }
+
+            .form button:hover{
+                background-color: #1453db;
+            }
 
 /* ■■■■■■■■ Footer ■■■■■■■■ */
 
@@ -327,6 +520,8 @@ main{
     font-size: 16px;
     color: #F6F6F6;
 }
+
+
 
 
 
