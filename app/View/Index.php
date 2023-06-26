@@ -8,21 +8,39 @@
 
 <!-- ■■■■■■■■ NavBar ■■■■■■■■-->  
 
-  <nav class="navbar-container1">
-    <div class="navbar1">
-        
-      <img class='logo1' src="../../public/images/batch_logo.png" alt="logo Batch Tramites y Procesos" aria-label="logo Batch Tramites y Procesos">
-      
-      <div class='nav-list1'>
-        <ul class='nav-list1'>
-          <li class='nav-item1'><a href="#">  Inicio</a></li>
-          <li class='nav-item1'><a href="#about-us">  Quienes somos  </a></li>
-          <li class='nav-item1'><a href="#services">  Servicios  </a></li>
-          <li class='nav-item1'><a href="#contact">  Contacto  </a></li>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-md navbar-light navbar-container1 position-sticky">
+    
+    <div class="container-fluid background">
 
-    <div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse nav-list1 navbar1" id="navbar-toggler">
+
+        <a class="navbar-brand" href="#">
+          <img src="../../public/images/batch_logo.png" alt="logo Batch Tramites y Procesos" class="logo1" alt="logo Batch Tramites y Procesos" aria-label="logo Batch Tramites y Procesos">
+        </a> 
+
+        <ul class="navbar-nav d-flex justify-content-center align-items-center nav-list2">
+          <li class="nav-item1">
+            <a aria-current="page" href="#"> Inicio </a>
+          </li>
+          <li class="nav-item1">
+            <a aria-current="page" href="#about-us"> Quienes somos </a>
+          </li>
+          <li class="nav-item1">
+            <a href="#services"> Servicios </a>
+          </li>
+          <li class="nav-item1">
+            <a href="#contact"> Contacto </a>
+          </li>
+        </ul>
+
+      </div>
+    
+    </div>
+  
   </nav>
 
 <!-- ■■■■■■■■ Hero Section ■■■■■■■■-->  
@@ -50,83 +68,65 @@
 
           <h2> 4 soluciones diseñadas para <u>simplificar tus procesos</u> </h2>
 
-          <div class="even-columns1">
+          <div class="even-columns1 row">
             
-            <div class='split-image1'>
+            <div class='split-image1 col-xl-5 col-lg-9 col-md-8 col-sm-8 col-8' >
               <img src="../../public/images/splash-solutions.png" alt="splash de edificio visto desde abajo" aria-label="imagen splash de edificio visto desde abajo">
             </div>
             
-            <div class="grid1">
-
-                <div class="ag-offer-block">
-              <div class="ag-format-container">
-                <ul class="ag-offer_list">
-                  <li class="ag-offer_item">
-                    <div class="ag-offer_visible-item">
-                      <div class="ag-offer_img-box">
-                        <img src="https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_images/icon-64-1.svg" class="ag-offer_img" alt="" />
-                      </div>
-                      <div class="ag-offer_title">
-                        Lorem ipsum
-                      </div>
-                    </div>
-                    <div class="ag-offer_hidden-item">
-                      <p class="ag-offer_text">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                      </p>
-                    </div>
-                  </li>
-                  <li class="ag-offer_item">
-                    <div class="ag-offer_visible-item">
-                      <div class="ag-offer_img-box">
-                        <img src="https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_images/icon-64-2.svg" class="ag-offer_img" alt="" />
-                      </div>
-                      <div class="ag-offer_title">
-                        Donec quam
+            <div id="valores" class="valores seccion-clara d-flex flex-column col-12 col-md-12 col-lg-12 col-xl-6">
+              <div class="container text-center valores-contenedor">
+                <div class="row row-cols-1 row-cols-md-2 g-4 d-flex">
+                  <!-- Valor 1 -->
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <div class="valor">
+                      <img src="../../public/images/batch_logo.png" alt="valor 1">
+                      <div class="overlay">
+                        <p>Proyecto 1</p>
+                        <div class="iconos-contenedor">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum rhonelibero tellus. Don ornare magna. Aenean nisi ante, finibus non faucibus a, volutpat vel lorem. Morbi nec commodo tortor. Duis vulputate tempor mauris sed ultrices. </p>
+                        </div>
                       </div>
                     </div>
-                    <div class="ag-offer_hidden-item">
-                      <p class="ag-offer_text">
-                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                      </p>
-                    </div>
-                  </li>
-                  <li class="ag-offer_item">
-                    <div class="ag-offer_visible-item">
-                      <div class="ag-offer_img-box">
-                        <img src="https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_images/icon-64-4.svg" class="ag-offer_img" alt="" />
-                      </div>
-                      <div class="ag-offer_title">
-                        DIli
+                  </div>
+                  <!-- Valor 2 -->
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <div class="valor">
+                      <img src="../../public/images/batch_logo.png" alt="valor 2">
+                      <div class="overlay">
+                        <p>Proyecto 2</p>
+                        <div class="iconos-contenedor">
+                          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum rhonelibero tellus. Don ornare magna. Aenean nisi ante, finibus non faucibus a, volutpat vel lorem. Morbi nec commodo tortor. Duis vulputate tempor mauris sed ultrices. </p>
+                        </div>
                       </div>
                     </div>
-                    <div class="ag-offer_hidden-item">
-                      <p class="ag-offer_text">
-                        Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor.
-                      </p>
-                    </div>
-                  </li>
-                  <li class="ag-offer_item">
-                    <div class="ag-offer_visible-item">
-                      <div class="ag-offer_img-box">
-                        <img src="https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_images/icon-64-3.svg" class="ag-offer_img" alt="" />
-                      </div>
-                      <div class="ag-offer_title">
-                        Donec pede
+                  </div>
+                  <!-- Valor 3 -->
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <div class="valor">
+                      <img src="../../public/images/batch_logo.png" alt="valor 3">
+                      <div class="overlay">
+                        <p>Proyecto 3</p>
+                        <div class="iconos-contenedor">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum rhonelibero tellus. Don ornare magna. Aenean nisi ante, finibus non faucibus a, volutpat vel lorem. Morbi nec commodo tortor. Duis vulputate tempor mauris sed ultrices. </p>
+                        </div>
                       </div>
                     </div>
-                    <div class="ag-offer_hidden-item">
-                      <p class="ag-offer_text">
-                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                      </p>
+                  </div>
+                  <!-- valor 4 -->
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <div class="valor">
+                      <img src="../../public/images/batch_logo.png" alt="valor 4">
+                      <div class="overlay">
+                        <p>Proyecto 4</p>
+                        <div class="iconos-contenedor">
+                          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum rhonelibero tellus. Don ornare magna. Aenean nisi ante, finibus non faucibus a, volutpat vel lorem. Morbi nec commodo tortor. Duis vulputate tempor mauris sed ultrices. </p>
+                        </div>
+                      </div>
                     </div>
-                  </li>
-
-                </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-
           </div>
 
         </article>
@@ -135,11 +135,9 @@
 
           <h2> Empresas que <u>nos respaldan</u> </h2>
 
-          <div class="even-columns1">
-
-            <img id='flame-solutions1' src="../../public/images/flame_solutions.png" alt="logotipo de flama blanco y negro">
-
-            <div class='grid-icons1'>
+          <div class="flamewave row row-cols-1 row-cols-md-2 g-4 d-flex">
+          
+            <div class='grid-icons1 col-6'>
               <span class="icon-circle1">
                 <a href="#" class="circle-anchor1"></a>
               </span>
@@ -154,8 +152,6 @@
               </span>
             </div>
           </div>
-
-          <img id='wave-solutions' src="../../public/images/wave_solutions.png" alt="ola azul">
 
         </article>
 
@@ -197,10 +193,10 @@
               <div class="carousel-item">
                 <div class="container">
                   <img class="testimonio-imagen rounded-circle" src="../../public/images/Recomendación ejemplo.png" alt="foto de cliente 3">
-                  <p class="testimonio-texto english">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum rhonelibero tellus. Don ornare magna. Aenean nisi ante, finibus non faucibus a, volutpat vel lorem. Morbi nec commodo tortor. Duis vulputate tempor mauris sed ultrices. </p>
+                  <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum rhonelibero tellus. Don ornare magna. Aenean nisi ante, finibus non faucibus a, volutpat vel lorem. Morbi nec commodo tortor. Duis vulputate tempor mauris sed ultrices. </p>
                   <div class="testimonio-info">
                     <p class="nombre_cliente">Leonardo</p>
-                    <p class="cargo_cliente english">Director of Constructora S.A. 3</p>
+                    <p class="cargo_cliente">Director of Constructora S.A. 3</p>
                   </div>
                 </div>
               </div>
@@ -209,12 +205,12 @@
 
             <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden english">Previous</span>
+              <span class="visually-hidden">Previous</span>
             </button>
 
             <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carousel" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden english">Next</span>
+              <span class="visually-hidden">Next</span>
             </button>
 
           </div>
@@ -222,33 +218,36 @@
       </div>
 
     </section>
-    
+
     <!-- ■■■■■■■■ Form ■■■■■■■■-->  
 
       <section class="form-container1">
 
         <h2>Solicita más información</h2>
 
-        <form class='even-columns1 form1' action="../Controller/insert_consultation" method='POST'>
+        <form class='row form1' action="../Controller/insert_consultation" method='POST'>
 
-          <div class="form-col1">
-          <label class='form-label1' for="name">*Nombre de la empresa</label>
-          <input class='form-input1' type="text" name='name' placeholder="Escribe aquí el nombre de tu empresa">
+          <div class="form-col1 col-xl-6 col-lg-9 col-md-8 col-sm-8 col-8">
+          
+            <label class='form-label1' for="name">*Nombre de la empresa</label>
+            <input class='form-input1' type="text" name='name' placeholder="Escribe aquí el nombre de tu empresa">
 
-          <label class='form-label1' for="nameResponsible">*Nombre completo</label>
-          <input class='form-input1' type="text" name='nameResponsible' placeholder="Escribe aquí tu nombre completo">
+            <label class='form-label1' for="nameResponsible">*Nombre completo</label>
+            <input class='form-input1' type="text" name='nameResponsible' placeholder="Escribe aquí tu nombre completo">
 
-          <label class='form-label1' for="positionResponsible">*Cargo</label>
-          <input class='form-input1' type="text" name='positionResponsible' placeholder="Escribe aquí tu cargo">
+            <label class='form-label1' for="positionResponsible">*Cargo</label>
+            <input class='form-input1' type="text" name='positionResponsible' placeholder="Escribe aquí tu cargo">
 
-          <label class='form-label1' for="phoneResponsible">*Teléfono</label>
-          <input class='form-input1' type="text" name='phoneResponsible' placeholder="Escribe aquí tu teléfono">
+            <label class='form-label1' for="phoneResponsible">*Teléfono</label>
+            <input class='form-input1' type="text" name='phoneResponsible' placeholder="Escribe aquí tu teléfono">
 
-          <label class='form-label1' for="emailResponsible">*Correo electrónico</label>
-          <input class='form-input1' type="text" name='emailResponsible' placeholder="Escribe aquí tu correo">
+            <label class='form-label1' for="emailResponsible">*Correo electrónico</label>
+            <input class='form-input1' type="text" name='emailResponsible' placeholder="Escribe aquí tu correo">
+          
           </div>
 
-          <div class="form-col2">
+          <div class="form-col2 col-xl-5 col-lg-9 col-md-8 col-sm-8 col-8">
+            
             <div class='radio-container1'>
               <input class='form-radio1' type="radio" name='request'>
               <label class='form-label1 radio-label1' >Quiero pedir un presupuesto</label>
@@ -259,10 +258,11 @@
               <label class='form-label1 radio-label' >Quiero hacer una consulta</label>
             </div>
 
-          <label class='form-label1 text-area-label1' for="">*Favor indicar...</label>
-          <textarea name="message" id='text-area' class='form-input1' cols="50" rows="40" placeholder="Por favor, escribe aquí tu consulta..."></textarea>
+            <label class='form-label1 text-area-label1' for="">*Favor indicar...</label>
+            <textarea name="message" id='text-area' class='form-input1' cols="50" rows="40" placeholder="Por favor, escribe aquí tu consulta..."></textarea>
 
-          <button>Enviar <i class="bi bi-send"></i></button>
+            <button>Enviar <i class="bi bi-send"></i></button>
+
           </div>
           
         </form>
@@ -271,32 +271,52 @@
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+   
+    <!-- ■■■■■■■■ Wavy-div ■■■■■■■■--> 
+      <div class='wavy-div'>
+        <svg width="100%" height="10rem" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto">
+          <rect width="100%" height="100%" fill="#F6F6F6" />
+          <defs>
+            <path id="wavepath" d="M 0 1000 0 400 Q 150 106 300 500 t 300 0 300 0 300 500 300 0 300 0  v1000 z" /> 
+          </defs>
+          <g>
+            <use xlink:href="#wavepath" y="243" fill="#00329d"></use>
+          </g>
+        </svg>
+      </div>
 </body>
 
   <!-- ■■■■■■■■ Footer ■■■■■■■■-->  
 
-    <footer class='footer1'>
+    <footer class='footer1' aria-label="Contacto y Ubicación">
 
-      <div class="footer-container1 even-columns1">
-        <div class='nav-footer1'>
-          <h3>Nuestra empresa</h3>
+      <div class="footer-container1 even-columns1 row">
+        <div class='col-xl-3 col-lg-4 col-md-8 col-sm-8 col-8'>
+          <h3> <i class="bi bi-info-circle"></i>Nuestra empresa</h3>
           <ul>
-            <li>Sobre nosotros</li>
-            <li>Términos y condiciones</li>
-            <li>Preguntas frecuentes</li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
           </ul>
         </div>
           
-        <div id='contact'>
-          <h3>Contáctanos</h3>
-          <p>Tel: 4000-4000</p>
-          <p>Mail: info@batchpanama.com</p>
+        <div id='contact' class='col-xl-3 col-lg-4 col-md-8 col-sm-8 col-8' aria-label="Telefono y Email">
+          <h3> <i class="bi bi-telephone"></i>Contáctanos</h3>
+          <ul>
+            <li><p>Tel: 4000-4000</p></li>
+            <li><a href="mailto:info@batchpanama.com" target="_blank" rel="noopener noreferrer">
+                <p>Mail: info@batchpanama.com</p></a>
+            </li>
+          </ul>
         </div>
 
-        <div>
-          <h3>Nuestras oficinas</h3>
-          <p>Plaza Ramos, 300 mts oeste de la Sabana, Monterrico, Papá Noel</p>
-          <a href="#">Ver en el mapa</a>
+        <div class='col-xl-4 col-lg-4 col-md-8 col-sm-8 col-8' aria-label="Dirección Fisica">
+          <h3><i class="bi bi-geo-alt"></i>Nuestras oficinas</h3>
+          <ul>
+            <li><p>Plaza Ramos, 300 mts oeste de la Sabana, Monterrico, Papá Noel</p></li>
+            <li><a href="#">Ver en el mapa</a></li>
+          <ul>
         </div>
       </div>
 
